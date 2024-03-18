@@ -8,7 +8,7 @@
     --primary-colour-lighter: hsl(210, 32%, 53%);
     --primary-colour-darker: hsl(210, 32%, 43%);
     --dark-colour: #334463;
-    --light-colour: #cedbec;
+    --light-colour: hsl(214, 44%, 98%);
     --highlight-colour: rgb(38, 96, 202);
 }
 
@@ -96,12 +96,14 @@ main {
     justify-content: center;
     gap: 60px;
     padding: 0 40px;
+    background-color: var(--light-colour);
 }
 
 article {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    background-color: white;
 }
 
 .header>p {
