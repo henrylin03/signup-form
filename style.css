@@ -10,7 +10,8 @@
 }
 
 body,
-input {
+input,
+button {
     font-family: "Jost", Arial, Helvetica, sans-serif;
 }
 
