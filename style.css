@@ -131,6 +131,8 @@ label {
 input {
     font-size: 1rem;
     width: 300px;
+    border: 1px solid #999;
+    border-radius: 5px;
 }
 
 button {
@@ -138,4 +140,5 @@ button {
     text-wrap: balance;
     font-size: 1rem;
     font-weight: bold;
+    border-radius: 5px;
 }
