@@ -9,7 +9,8 @@
     box-sizing: border-box;
 }
 
-body {
+body,
+input {
     font-family: "Jost", Arial, Helvetica, sans-serif;
 }
 
@@ -136,6 +137,10 @@ label {
     font-size: 0.6rem;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.7);
+}
+
+input {
+    font-size: 1rem;
 }
 
 button {
