@@ -21,7 +21,7 @@ main {
 
 .left {
     min-height: 100%;
-    min-width: 40%;
+    min-width: 25%;
     flex: 1 1 auto;
     background-image: url("./assets/images/background.jpg");
     background-size: clamp(2000px, 140%, 5000px) auto;
@@ -70,5 +70,6 @@ a {
 }
 
 .right {
-    flex: 4 1 auto;
+    flex: 5 1 auto;
+    padding: 30px;
 }
