@@ -45,6 +45,11 @@ main {
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     padding: 20px;
+    gap: 1rem;
+}
+
+.logo {
+    height: 150px;
 }
 
 .credit {
