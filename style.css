@@ -11,5 +11,7 @@ main {
 .left {
     height: 100%;
     background-image: url("./assets/background.jpg");
-    background-size: cover;
+    background-size: 140%;
+    background-repeat: no-repeat;
+    background-position: right;
 }
