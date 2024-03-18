@@ -1,7 +1,16 @@
+@font-face {
+    font-family: Jost;
+    src: url("./assets/fonts/Jost/Jost-VariableFont_wght.ttf")
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: "Jost", Arial, Helvetica, sans-serif;
 }
 
 main {
