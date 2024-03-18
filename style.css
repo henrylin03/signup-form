@@ -23,7 +23,7 @@ main {
     background-image: url("./assets/images/background.jpg");
     background-size: clamp(2000px, 140%, 5000px) auto;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -36,6 +36,7 @@ main {
     color: white;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .credit {
