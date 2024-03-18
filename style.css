@@ -137,7 +137,8 @@ input {
     font-size: 1rem;
     width: 300px;
     border: 1px solid #999;
-    border-radius: 5px;
+    border-radius: 8px;
+    padding: 5px 10px;
 }
 
 button {
@@ -145,6 +146,7 @@ button {
     text-wrap: balance;
     font-size: 1rem;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 8px;
     white-space: nowrap;
+    padding: 10px;
 }
