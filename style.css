@@ -71,6 +71,11 @@ main {
 
 .right {
     flex: 5 1 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 30px;
     padding: 30px;
 }
 
