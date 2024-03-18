@@ -15,18 +15,20 @@ body {
 
 main {
     height: 100dvh;
+    display: flex;
+    align-items: center;
 }
 
 .left {
     min-height: 100%;
-    max-width: 40%;
+    min-width: 40%;
+    flex: 1 1 auto;
     background-image: url("./assets/images/background.jpg");
     background-size: clamp(2000px, 140%, 5000px) auto;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
     flex-direction: column;
-    position: relative;
 }
 
 .content {
@@ -70,4 +72,8 @@ main {
 
 a {
     color: white;
+}
+
+.right {
+    flex: 4 1 auto;
 }
