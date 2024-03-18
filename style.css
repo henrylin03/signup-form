@@ -168,6 +168,8 @@ input:invalid {
     border: 1.8px solid hsl(0, 100%, 50%);
 }
 
+/* TODO: use javascript to make sure only invalid after value is changed. otherwise too confronting*/
+
 button {
     max-width: 200px;
     font-size: 1rem;
