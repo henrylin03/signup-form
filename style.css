@@ -153,7 +153,6 @@ input:focus {
 
 button {
     max-width: 200px;
-    text-wrap: balance;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 8px;
