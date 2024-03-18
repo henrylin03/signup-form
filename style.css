@@ -26,10 +26,9 @@ main {
     background-position: center;
     display: flex;
     flex-direction: column;
-    padding: 10px;
 }
 
-.site-name {
+.content {
     flex: 1 0 auto;
     font-size: 80px;
     letter-spacing: 1rem;
@@ -39,6 +38,21 @@ main {
     justify-content: center;
 }
 
+.site-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+
 .credit {
     flex-shrink: 0;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+a {
+    color: white;
 }
