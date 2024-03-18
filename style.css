@@ -34,8 +34,9 @@ main {
     letter-spacing: 1rem;
     color: white;
     display: flex;
-    align-items: center;
+    align-items: first baseline;
     justify-content: center;
+    position: relative;
 }
 
 .site-name {
@@ -46,6 +47,8 @@ main {
     width: 100%;
     padding: 20px;
     gap: 1rem;
+    position: absolute;
+    top: 150px;
 }
 
 .logo {
