@@ -6,6 +6,7 @@
 :root {
     --primary-colour: #547ca3;
     --primary-color-lighter: hsl(210, 32%, 55%);
+    --primary-color-darker: hsl(210, 32%, 43%);
     --dark-colour: #334463;
     --light-colour: #cedbec;
 }
@@ -167,4 +168,8 @@ button {
 
 button:hover {
     background-color: var(--primary-color-lighter);
+}
+
+button:active {
+    background-color: var(--primary-color-darker);
 }
