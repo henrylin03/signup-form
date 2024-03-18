@@ -90,8 +90,11 @@ main {
     flex-direction: column;
     justify-content: center;
     gap: 60px;
-    padding: 0 40px;
     background-color: var(--light-colour);
+}
+
+.right div {
+    padding: 0 40px;
 }
 
 article {
@@ -99,6 +102,8 @@ article {
     flex-direction: column;
     gap: 20px;
     background-color: white;
+    width: 100%;
+    padding: 30px 40px;
 }
 
 .header>p {
