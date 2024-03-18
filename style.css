@@ -16,6 +16,7 @@ main {
     background-position: right;
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 
 .site-name {
