@@ -19,7 +19,7 @@ main {
 
 .left {
     min-height: 100%;
-    max-width: 30%;
+    max-width: 40%;
     background-image: url("./assets/images/background.jpg");
     background-size: clamp(2000px, 140%, 5000px) auto;
     background-repeat: no-repeat;
