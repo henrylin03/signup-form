@@ -19,25 +19,7 @@ main {
     align-items: center;
 }
 
-p,
-h2 {
-    font-size: 1.1rem;
-}
-
-ul {
-    list-style: none;
-}
-
-li {
-    display: flex;
-    flex-direction: column;
-}
-
-input {
-    width: 30%;
-}
-
-
+/* left-side */
 .left {
     min-height: 100%;
     min-width: 30%;
@@ -93,6 +75,8 @@ input {
     color: white;
 }
 
+
+/* right-side */
 .right {
     flex: 5 1 auto;
     height: 100%;
@@ -105,4 +89,29 @@ input {
 
 .header>p {
     font-weight: bold;
+}
+
+p,
+h2 {
+    font-size: 1.1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+input {
+    width: 30%;
 }
