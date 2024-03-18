@@ -14,4 +14,14 @@ main {
     background-size: clamp(2000px, 140%, 5000px) auto;
     background-repeat: no-repeat;
     background-position: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.site-name {
+    flex: 1 0 auto;
+}
+
+.credit {
+    flex-shrink: 0;
 }
