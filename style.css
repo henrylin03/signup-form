@@ -3,6 +3,12 @@
     src: url("./assets/fonts/Jost/Jost-VariableFont_wght.ttf")
 }
 
+:root {
+    --primary-colour: #547ca3;
+    --dark-colour: #334463;
+    --light-colour: #cedbec;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -137,9 +143,14 @@ label {
 input {
     font-size: 1rem;
     width: 300px;
-    border: 1px solid #999;
+    border: 1px solid #dadada;
     border-radius: 5px;
     padding: 5px 10px;
+    outline: none;
+}
+
+input:focus {
+    border-color: var(--primary-colour);
 }
 
 button {
