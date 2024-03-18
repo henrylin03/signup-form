@@ -10,7 +10,7 @@ main {
 
 .left {
     height: 100%;
-    background-image: url("./assets/background.jpg");
+    background-image: url("./assets/images/background.jpg");
     background-size: clamp(2000px, 140%, 5000px) auto;
     background-repeat: no-repeat;
     background-position: right;
@@ -21,6 +21,7 @@ main {
 
 .site-name {
     flex: 1 0 auto;
+    display: flex;
 }
 
 .credit {
