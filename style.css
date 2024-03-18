@@ -5,8 +5,8 @@
 
 :root {
     --primary-colour: #547ca3;
-    --primary-color-lighter: hsl(210, 32%, 55%);
-    --primary-color-darker: hsl(210, 32%, 43%);
+    --primary-colour-lighter: hsl(210, 32%, 55%);
+    --primary-colour-darker: hsl(210, 32%, 43%);
     --dark-colour: #334463;
     --light-colour: #cedbec;
     --highlight-colour: rgb(38, 96, 202);
@@ -167,9 +167,9 @@ button {
 }
 
 button:hover {
-    background-color: var(--primary-color-lighter);
+    background-color: var(--primary-colour-lighter);
 }
 
 button:active {
-    background-color: var(--primary-color-darker);
+    background-color: var(--primary-colour-darker);
 }
