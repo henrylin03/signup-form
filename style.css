@@ -102,9 +102,12 @@ h2 {
     font-size: 1.1rem;
 }
 
+form {
+    max-width: 40%;
+}
+
 ul {
     list-style: none;
-    max-width: 40%;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
