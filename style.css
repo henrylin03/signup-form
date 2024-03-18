@@ -84,8 +84,9 @@ ul {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 0 30px;
+    justify-content: center;
+    gap: 60px;
+    padding: 0 40px;
 }
 
 .header>p {
