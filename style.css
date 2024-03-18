@@ -5,6 +5,7 @@
 
 :root {
     --primary-colour: #547ca3;
+    --primary-color-lighter: hsl(210, 32%, 55%);
     --dark-colour: #334463;
     --light-colour: #cedbec;
 }
@@ -151,7 +152,7 @@ input {
 
 input:focus {
     border: 1.8px solid var(--primary-colour);
-    box-shadow: 5px 3px 9px -2px #D1D1D1;
+    box-shadow: 5px 3px 9px -2px rgba(0, 0, 0, 0.3);
 }
 
 button {
@@ -166,5 +167,9 @@ button {
     color: white;
     border: none;
     cursor: pointer;
-    box-shadow: 5px 3px 9px -2px #D1D1D1;
+    box-shadow: 5px 3px 9px -2px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: var(--primary-color-lighter);
 }
