@@ -24,6 +24,10 @@ h2 {
     font-size: 1.1rem;
 }
 
+ul {
+    list-style: none;
+}
+
 
 .left {
     min-height: 100%;
