@@ -73,3 +73,7 @@ a {
     flex: 5 1 auto;
     padding: 30px;
 }
+
+.header>p {
+    font-weight: bold;
+}
