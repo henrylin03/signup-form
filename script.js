@@ -29,6 +29,22 @@ function validatePasswords() {
 }
 
 function validateNonPasswordFields() {
+  const nonPasswordContainers = form.querySelectorAll(
+    "li:not([class^='password'])"
+  );
+  Array.from(nonPasswordContainers).forEach((containerElem) => {
+    const inputElement = containerElem.querySelector("input");
+    if (inputElement.checkValidity()) {
+      Array.from(containerElem.children).forEach((field) =>
+        field.classList.remove("error")
+      );
+    } else {
+      Array.from(containerElem.children).forEach((field) =>
+        field.classList.add("error")
+      );
+    }
+  });
+
   return;
 }
 
@@ -37,6 +53,7 @@ function validateForm(e) {
 
   e.preventDefault();
   validatePasswords();
+  validateNonPasswordFields();
 }
 
 // function validatePasswordsMatch() {
