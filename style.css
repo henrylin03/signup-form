@@ -10,6 +10,7 @@
     --dark-colour: #334463;
     --light-colour: hsl(214, 44%, 98%);
     --highlight-colour: rgb(38, 96, 202);
+    --error-colour: hsl(0, 100%, 50%);
 }
 
 * {
@@ -155,12 +156,16 @@ input {
 }
 
 input:invalid {
-    border: 1.8px solid hsl(0, 100%, 50%);
+    border: 1.8px solid var(--error-colour);
 }
 
 input:focus {
     border: 1.8px solid var(--highlight-colour);
     box-shadow: 4px 4px 6px -1px rgba(0, 0, 0, 0.2);
+}
+
+.error-message {
+    color: var(--error-colour);
 }
 
 button {
