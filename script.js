@@ -8,6 +8,15 @@ const confirmPasswordField = document.querySelector("#password_confirm");
 
 form.noValidate = true;
 
+function addErrorStyling(fieldContainer, reverse = false) {
+  const fieldArray = Array.from(fieldContainer);
+  if (reverse) {
+    fieldArray.forEach((f) => f.classList.remove("error"));
+  } else {
+    fieldArray.forEach((f) => f.classList.add("error"));
+  }
+}
+
 function validatePasswords() {
   if (
     passwordField.value &&
