@@ -160,7 +160,7 @@ input {
     outline: none;
 }
 
-input:invalid {
+.invalid {
     border: 1.8px solid var(--error-colour);
 }
 
