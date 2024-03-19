@@ -9,15 +9,21 @@ function validateForm(e) {
   }
 
   e.preventDefault();
-  Array.from(inputs).forEach((i) => {
-    if (i.checkValidity()) {
-      i.classList.remove("error");
-      if (i.nextElementSibling) i.nextElementSibling.classList.remove("error");
+  Array.from(inputs).forEach((input) => {
+    const inputIsValid = input.checkValidity();
+    let inputId = input.getAttribute("id");
+    let fieldContainer = form.querySelector(`.${inputId}_container`);
+
+    if (inputIsValid) {
+      Array.from(fieldContainer.children).forEach((elem) =>
+        elem.classList.remove("error")
+      );
       return;
     }
 
-    i.classList.add("error");
-    if (i.nextElementSibling) i.nextElementSibling.classList.add("error");
+    Array.from(fieldContainer.children).forEach((elem) =>
+      elem.classList.add("error")
+    );
   });
 }
 
