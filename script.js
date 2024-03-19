@@ -4,9 +4,7 @@ const inputs = document.querySelectorAll("input");
 form.noValidate = true;
 
 function validateForm(e) {
-  if (form.checkValidity()) {
-    return console.log("All form inputs are valid.");
-  }
+  if (form.checkValidity()) return;
 
   e.preventDefault();
   Array.from(inputs).forEach((input) => {
