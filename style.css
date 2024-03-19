@@ -151,6 +151,10 @@ label {
     margin: 0 0 3px 1.5px;
 }
 
+label.error {
+    color: var(--error-colour);
+}
+
 input {
     font-size: 1rem;
     width: 300px;
@@ -160,7 +164,7 @@ input {
     outline: none;
 }
 
-.error {
+input.error {
     border: 1.8px solid var(--error-colour);
 }
 
@@ -172,6 +176,10 @@ input:focus {
 .error-message {
     color: var(--error-colour);
     display: none;
+}
+
+.error-message.error {
+    display: block;
 }
 
 button {
