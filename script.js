@@ -1,14 +1,14 @@
 const form = document.querySelector("form");
 const inputs = document.querySelectorAll("input");
-const passwordInputContainers = document.querySelectorAll(
-  "li[class^='password']"
-);
 const passwordField = document.querySelector("#password");
 const confirmPasswordField = document.querySelector("#password_confirm");
 
 form.noValidate = true;
 
 function validatePasswords() {
+  const passwordInputContainers = document.querySelectorAll(
+    "li[class^='password']"
+  );
   if (
     passwordField.value &&
     confirmPasswordField.value &&
@@ -26,6 +26,10 @@ function validatePasswords() {
       Array.from(inputFields).forEach((field) => field.classList.add("error"));
     });
   }
+}
+
+function validateNonPasswordFields() {
+  return;
 }
 
 function validateForm(e) {
