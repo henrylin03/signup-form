@@ -171,6 +171,7 @@ input:focus {
 
 .error-message {
     color: var(--error-colour);
+    display: none;
 }
 
 button {
