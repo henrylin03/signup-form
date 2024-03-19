@@ -52,5 +52,5 @@ function validateForm(e) {
 form.addEventListener("submit", validateForm);
 passwordFields.forEach((f) => f.addEventListener("input", validatePasswords));
 nonPasswordFields.forEach((f) =>
-  f.addEventListener("input", () => validateNonPasswordField(f))
+  f.addEventListener("blur", () => validateNonPasswordField(f))
 );
