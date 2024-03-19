@@ -32,6 +32,7 @@ function validateForm(e) {
   if (form.checkValidity()) return;
 
   e.preventDefault();
+  validatePasswords();
 }
 
 // function validatePasswordsMatch() {
