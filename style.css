@@ -30,7 +30,6 @@ main {
 
 .content {
     flex: 1 0 auto;
-    font-size: 80px;
     letter-spacing: 1rem;
     color: white;
     display: flex;
@@ -39,6 +38,12 @@ main {
     position: relative;
 }
 
+.content h1 {
+    font-size: 80px;
+    font-weight: 200;
+}
+
+
 .site-name {
     display: flex;
     align-items: center;
@@ -46,13 +51,13 @@ main {
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     padding: 20px;
-    gap: 1rem;
+    gap: 1.5rem;
     position: absolute;
     top: 150px;
 }
 
 .logo {
-    height: 150px;
+    height: 100px;
 }
 
 .credit {
