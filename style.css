@@ -155,7 +155,7 @@ input {
     outline: none;
 }
 
-.invalid {
+.error {
     border: 1.8px solid var(--error-colour);
 }
 
