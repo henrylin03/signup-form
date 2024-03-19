@@ -27,13 +27,12 @@ function validatePasswords() {
   }
 }
 
-function validateNonPasswordField(e) {
-  const inputForValidation = e.target;
-  const inputId = inputForValidation.getAttribute("id");
+function validateNonPasswordField(field) {
+  const inputId = field.getAttribute("id");
   const containerOfInput = form.querySelector(`.${inputId}_container`);
   const childrenOfContainerArray = Array.from(containerOfInput.children);
 
-  if (inputForValidation.checkValidity()) {
+  if (field.checkValidity()) {
     childrenOfContainerArray.forEach((child) =>
       child.classList.remove("error")
     );
@@ -47,12 +46,11 @@ function validateForm(e) {
 
   e.preventDefault();
   validatePasswords();
-  // nonPasswordFields.forEach((f) => validateNonPasswordField(f));
-  //?how do i ensure that i can do all of them in one hit again
+  nonPasswordFields.forEach((f) => validateNonPasswordField(f));
 }
 
 form.addEventListener("submit", validateForm);
 passwordFields.forEach((f) => f.addEventListener("input", validatePasswords));
 nonPasswordFields.forEach((f) =>
-  f.addEventListener("input", validateNonPasswordField)
+  f.addEventListener("input", () => validateNonPasswordField(f))
 );
