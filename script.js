@@ -1,5 +1,6 @@
 const form = document.querySelector("form");
 const passwordFields = form.querySelectorAll("input[id^='password']");
+const nonPasswordFields = form.querySelectorAll("input:not([id^='password'])");
 
 form.noValidate = true;
 
@@ -26,33 +27,32 @@ function validatePasswords() {
   }
 }
 
-// function validateNonPasswordFields() {
-//   const nonPasswordContainers = form.querySelectorAll(
-//     "li:not([class^='password'])"
-//   );
-//   Array.from(nonPasswordContainers).forEach((containerElem) => {
-//     const inputElement = containerElem.querySelector("input");
-//     if (inputElement.checkValidity()) {
-//       Array.from(containerElem.children).forEach((field) =>
-//         field.classList.remove("error")
-//       );
-//     } else {
-//       Array.from(containerElem.children).forEach((field) =>
-//         field.classList.add("error")
-//       );
-//     }
-//   });
+function validateNonPasswordField(e) {
+  const inputForValidation = e.target;
+  const inputId = inputForValidation.getAttribute("id");
+  const containerOfInput = form.querySelector(`.${inputId}_container`);
+  const childrenOfContainerArray = Array.from(containerOfInput.children);
 
-//   return;
-// }
+  if (inputForValidation.checkValidity()) {
+    childrenOfContainerArray.forEach((child) =>
+      child.classList.remove("error")
+    );
+  } else {
+    childrenOfContainerArray.forEach((child) => child.classList.add("error"));
+  }
+}
 
 function validateForm(e) {
   if (form.checkValidity()) return;
 
   e.preventDefault();
   validatePasswords();
-  // validateNonPasswordFields();
+  // nonPasswordFields.forEach((f) => validateNonPasswordField(f));
+  //?how do i ensure that i can do all of them in one hit again
 }
 
 form.addEventListener("submit", validateForm);
 passwordFields.forEach((f) => f.addEventListener("input", validatePasswords));
+nonPasswordFields.forEach((f) =>
+  f.addEventListener("input", validateNonPasswordField)
+);
