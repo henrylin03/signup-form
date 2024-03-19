@@ -1,5 +1,7 @@
 const form = document.querySelector("form");
 const inputs = document.querySelectorAll("input");
+const passwordField = document.querySelector("#password");
+const confirmPasswordField = document.querySelector("#password_confirm");
 
 form.noValidate = true;
 
