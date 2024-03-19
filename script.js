@@ -8,26 +8,24 @@ const confirmPasswordField = document.querySelector("#password_confirm");
 
 form.noValidate = true;
 
-function addErrorStyling(fieldContainer, reverse = false) {
-  const fieldArray = Array.from(fieldContainer);
-  if (reverse) {
-    fieldArray.forEach((f) => f.classList.remove("error"));
-  } else {
-    fieldArray.forEach((f) => f.classList.add("error"));
-  }
-}
-
 function validatePasswords() {
   if (
     passwordField.value &&
     confirmPasswordField.value &&
     passwordField.value === confirmPasswordField.value
-  )
-    return;
-  Array.from(passwordInputContainers).forEach((containerElem) => {
-    const inputFields = containerElem.children;
-    Array.from(inputFields).forEach((field) => field.classList.add("error"));
-  });
+  ) {
+    Array.from(passwordInputContainers).forEach((containerElem) => {
+      const inputFields = containerElem.children;
+      Array.from(inputFields).forEach((field) =>
+        field.classList.remove("error")
+      );
+    });
+  } else {
+    Array.from(passwordInputContainers).forEach((containerElem) => {
+      const inputFields = containerElem.children;
+      Array.from(inputFields).forEach((field) => field.classList.add("error"));
+    });
+  }
 }
 
 function validateForm(e) {
@@ -69,4 +67,5 @@ function validateForm(e) {
 // }
 
 form.addEventListener("submit", validateForm);
+passwordField.addEventListener("input", validatePasswords);
 confirmPasswordField.addEventListener("input", validatePasswords);
