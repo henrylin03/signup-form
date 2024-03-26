@@ -204,3 +204,9 @@ button:hover {
 button:active {
     background-color: var(--primary-colour-darker);
 }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
