@@ -213,4 +213,9 @@ button:active {
 
 .footer a {
     color: var(--highlight-colour);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: var(--primary-colour-lighter);
 }
