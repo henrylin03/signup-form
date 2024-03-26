@@ -42,15 +42,15 @@ function validateNonPasswordField(field) {
   }
 }
 
-function validateForm(e) {
-  if (form.checkValidity()) return;
+function validateAndSubmitForm(e) {
+  if (form.checkValidity()) form.submit();
 
   e.preventDefault();
   validatePasswords();
   nonPasswordFields.forEach((f) => validateNonPasswordField(f));
 }
 
-createAccountButton.addEventListener("click", validateForm);
+createAccountButton.addEventListener("click", validateAndSubmitForm);
 passwordFields.forEach((f) => f.addEventListener("input", validatePasswords));
 nonPasswordFields.forEach((f) =>
   f.addEventListener("blur", () => validateNonPasswordField(f))
