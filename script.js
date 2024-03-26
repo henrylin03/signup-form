@@ -1,6 +1,7 @@
 const form = document.querySelector("form");
 const passwordFields = form.querySelectorAll("input[id^='password']");
 const nonPasswordFields = form.querySelectorAll("input:not([id^='password'])");
+const createAccountButton = document.querySelector("button");
 
 form.noValidate = true;
 
@@ -49,7 +50,7 @@ function validateForm(e) {
   nonPasswordFields.forEach((f) => validateNonPasswordField(f));
 }
 
-form.addEventListener("submit", validateForm);
+createAccountButton.addEventListener("click", validateForm);
 passwordFields.forEach((f) => f.addEventListener("input", validatePasswords));
 nonPasswordFields.forEach((f) =>
   f.addEventListener("blur", () => validateNonPasswordField(f))
