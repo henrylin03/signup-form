@@ -95,7 +95,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 60px;
+    gap: 30px;
     background-color: var(--light-colour);
 }
 
