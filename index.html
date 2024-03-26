@@ -60,9 +60,9 @@
                         </li>
                         <li class="phone_container">
                             <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="user_phone" autocomplete="mobile" required
-                                placeholder="0412345678">
-                            <small class="error-message">* Please enter a valid mobile number</small>
+                            <input type="tel" id="phone" name="user_phone" autocomplete="mobile" pattern="04[0-9]{8}"
+                                placeholder="0412345678" required>
+                            <small class="error-message">* Please enter a valid Australian number (no spaces)</small>
                         </li>
                         <li class="password_container">
                             <label for="password">Password</label>
